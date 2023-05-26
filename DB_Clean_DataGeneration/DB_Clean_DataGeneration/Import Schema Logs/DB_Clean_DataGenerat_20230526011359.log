@@ -1,0 +1,84 @@
+5/26/2023 9:13:59 AM	This log contains information about the import schema operation into project 'DB_Clean_DataGeneration' on computer 'CBG-HELIX-DDAVE' by user 'dave'.
+5/26/2023 9:13:59 AM	Import of database schema has started.
+5/26/2023 9:14:16 AM	Gathering database credentials
+5/26/2023 9:14:16 AM	Gathering database options
+5/26/2023 9:14:16 AM	Gathering generic database scoped configuration option
+5/26/2023 9:14:16 AM	Gathering users
+5/26/2023 9:14:16 AM	Gathering roles
+5/26/2023 9:14:16 AM	Gathering application roles
+5/26/2023 9:14:16 AM	Gathering role memberships
+5/26/2023 9:14:16 AM	Gathering filegroups
+5/26/2023 9:14:16 AM	Gathering full-text catalogs
+5/26/2023 9:14:16 AM	Gathering assemblies
+5/26/2023 9:14:16 AM	Gathering certificates
+5/26/2023 9:14:16 AM	Gathering asymmetric keys
+5/26/2023 9:14:16 AM	Gathering symmetric keys
+5/26/2023 9:14:16 AM	Gathering encrypted symmetric keys
+5/26/2023 9:14:16 AM	Gathering schemas
+5/26/2023 9:14:16 AM	Gathering XML schema collections
+5/26/2023 9:14:16 AM	Gathering user-defined data types
+5/26/2023 9:14:16 AM	Gathering user-defined types
+5/26/2023 9:14:16 AM	Gathering table types
+5/26/2023 9:14:16 AM	Gathering unique keys for table types
+5/26/2023 9:14:16 AM	Gathering primary keys for table types
+5/26/2023 9:14:16 AM	Gathering indexes for table types
+5/26/2023 9:14:17 AM	Gathering check constraints for table types
+5/26/2023 9:14:17 AM	Gathering default constraints for table types
+5/26/2023 9:14:17 AM	Gathering partition functions
+5/26/2023 9:14:17 AM	Gathering partition schemes
+5/26/2023 9:14:17 AM	Gathering functions
+5/26/2023 9:14:17 AM	Gathering encrypted functions
+5/26/2023 9:14:17 AM	Gathering aggregates
+5/26/2023 9:14:17 AM	Gathering procedures
+5/26/2023 9:14:17 AM	Gathering encrypted procedures
+5/26/2023 9:14:17 AM	Gathering tables
+5/26/2023 9:14:17 AM	Gathering primary keys
+5/26/2023 9:14:17 AM	Gathering unique constraints
+5/26/2023 9:14:17 AM	Gathering foreign keys
+5/26/2023 9:14:17 AM	Gathering default constraints
+5/26/2023 9:14:17 AM	Gathering check constraints
+5/26/2023 9:14:17 AM	Gathering views
+5/26/2023 9:14:17 AM	Gathering encrypted views
+5/26/2023 9:14:17 AM	Gathering indexes
+5/26/2023 9:14:17 AM	Gathering statistics
+5/26/2023 9:14:17 AM	Gathering full-text index stoplists
+5/26/2023 9:14:17 AM	Gathering search property lists
+5/26/2023 9:14:17 AM	Gathering search properties
+5/26/2023 9:14:17 AM	Gathering full-text indexes
+5/26/2023 9:14:17 AM	Gathering column store indexes
+5/26/2023 9:14:17 AM	Gathering spatial indexes
+5/26/2023 9:14:17 AM	Gathering XML indexes
+5/26/2023 9:14:17 AM	Gathering Selective XML indexes
+5/26/2023 9:14:17 AM	Gathering encrypted triggers
+5/26/2023 9:14:17 AM	Gathering triggers
+5/26/2023 9:14:17 AM	Gathering encrypted and clr ddl triggers
+5/26/2023 9:14:17 AM	Gathering ddl triggers
+5/26/2023 9:14:17 AM	Creating edge constraints
+5/26/2023 9:14:17 AM	Gathering synonyms
+5/26/2023 9:14:17 AM	Gathering defaults
+5/26/2023 9:14:17 AM	Gathering data constraint uddt bindings
+5/26/2023 9:14:17 AM	Gathering rules
+5/26/2023 9:14:17 AM	Gathering data constraint uddt bindings
+5/26/2023 9:14:17 AM	Gathering message types
+5/26/2023 9:14:17 AM	Gathering queues
+5/26/2023 9:14:17 AM	Gathering contracts
+5/26/2023 9:14:17 AM	Gathering services
+5/26/2023 9:14:17 AM	Gathering event notifications
+5/26/2023 9:14:17 AM	Gathering remote service bindings
+5/26/2023 9:14:17 AM	Gathering broker priorities
+5/26/2023 9:14:17 AM	Gathering signatures
+5/26/2023 9:14:17 AM	Gathering data compression options
+5/26/2023 9:14:17 AM	Gathering sequence types
+5/26/2023 9:14:17 AM	Gathering security policies
+5/26/2023 9:14:17 AM	Gather column encryption keys
+5/26/2023 9:14:17 AM	Gathering column master keys
+5/26/2023 9:14:17 AM	Gathering external data sources
+5/26/2023 9:14:17 AM	Gathering external file formats
+5/26/2023 9:14:17 AM	Gathering external tables
+5/26/2023 9:14:17 AM	Gathering extended properties
+5/26/2023 9:14:20 AM	Gathering assemblies
+5/26/2023 9:14:20 AM	Scanning project for duplicate elements
+5/26/2023 9:14:20 AM	Finished duplicate element processing
+5/26/2023 9:14:20 AM	Finished importing database.
+5/26/2023 9:14:20 AM	A summary of the import was saved to the following location: C:\GIT\DB_Clean_DataGeneration\DB_Clean_DataGeneration\DB_Clean_DataGeneration\Import Schema Logs\DB_Clean_DataGenerat_20230526011359.log
+5/26/2023 9:14:20 AM	Click Finish to continue...
