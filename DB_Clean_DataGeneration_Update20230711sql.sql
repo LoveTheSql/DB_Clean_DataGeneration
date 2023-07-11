@@ -946,12 +946,12 @@ GO
 --						dbo.FullNames AS DG ON RIGHT(C.',@curIDColumnName,',6) = DG.ID
 --						changed to --
 --						dbo.FullNames AS DG ON RIGHT(CONVERT(VARCHAR(50),C.',@curIDColumnName,'),6) = DG.ID
--- EXEC dbo.DataCleaning 'qatest8@CoventBridge.com','DEVOPS','david.speight@coventbridge.com',1,0,1
+-- EXEC dbo.DataCleaning 'qatest8@domain.com','DEVOPS','me@domain.com',1,0,1
 -- =============================================
 CREATE OR ALTER        PROCEDURE [dbo].[DataCleaning]
-@email varchar(100) = 'qatest@CoventBridge.com',			-- set this to the email you want to replace all email addresses in the database with.
+@email varchar(100) = 'qatest@domain.com',			-- set this to the email you want to replace all email addresses in the database with.
 @AgentProfile varchar(100) = 'DEVOPS',						-- SQL Agent profile account to be used to send failure alert email from.
-@RecipientEmail varchar(200) = 'DEVOPS@CoventBridge.com',	-- Email address to send the failure alert to.
+@RecipientEmail varchar(200) = 'DEVOPS@domain.com',	-- Email address to send the failure alert to.
 @DebuggerON bit = 0,
 @LocalHostIsQa int = 0,									-- WARNING:  This will RUN, even on PROD if set to 1.
 @CleanTemporalTables bit = 1								-- This DISABLES the HISTORY table, DELETES all history records allows the main table to be cleaned without records logged.
@@ -1647,7 +1647,7 @@ BEGIN
 			@recipients = @RecipientEmail,
 			@body = @Body,
 			@subject = @Body ,
-			@body_format = 'HTML'; 
+			@body_format = 'HTML';Â 
 	END TRY
 	BEGIN CATCH
 		INSERT INTO dbo.DimAudit ( [ParentAuditKey], [TableName], [PkgName], [PkgGUID], [ExecStartDT], [ExecStopDT], [UpdateRowCnt], [SuccessfulProcessingInd])
@@ -1812,12 +1812,12 @@ GO
 --						Run UPDATE statements in BATCHES for each table instead of for each column.
 --						Exclude rows that are defined in the new table: CleaningRowExclude
 --						
--- EXEC dbo.DataCleaningBatched 'qatest8@CoventBridge.com','DEVOPS','david.speight@coventbridge.com',1,0,1
+-- EXEC dbo.DataCleaningBatched 'qatest8@domain.com','DEVOPS','me@domain.com',1,0,1
 -- =============================================
 CREATE OR ALTER          PROCEDURE [dbo].[DataCleaningBatched]
-@email varchar(100) = 'qatest@CoventBridge.com',			-- set this to the email you want to replace all email addresses in the database with.
+@email varchar(100) = 'qatest@domain.com',			-- set this to the email you want to replace all email addresses in the database with.
 @AgentProfile varchar(100) = 'DEVOPS',						-- SQL Agent profile account to be used to send failure alert email from.
-@RecipientEmail varchar(200) = 'DEVOPS@CoventBridge.com',	-- Email address to send the failure alert to.
+@RecipientEmail varchar(200) = 'DEVOPS@domain.com',	-- Email address to send the failure alert to.
 @DebuggerON bit = 0,
 @LocalHostIsQa int = 0,										-- WARNING:  This will RUN, even on PROD if set to 1.
 @CleanTemporalTables bit = 1								-- This DISABLES the HISTORY table, DELETES all history records allows the main table to be cleaned without records logged.
@@ -2551,7 +2551,7 @@ BEGIN
 					@recipients = @RecipientEmail,
 					@body = @Body,
 					@subject = @Body ,
-					@body_format = 'HTML'; 
+					@body_format = 'HTML';Â 
 			END TRY
 			BEGIN CATCH
 				INSERT INTO dbo.DimAudit ( [ParentAuditKey], [TableName], [PkgName], [PkgGUID], [ExecStartDT], [ExecStopDT], [UpdateRowCnt], [SuccessfulProcessingInd], [SqlStatement])
@@ -2591,12 +2591,12 @@ GO
 --						Run UPDATE statements in BATCHES for each table instead of for each column.
 --						Exclude rows that are defined in the new table: CleaningRowExclude
 --						
--- EXEC dbo.DataCleaningBatched 'qatest8@CoventBridge.com','DEVOPS','david.speight@coventbridge.com',1,0,1
+-- EXEC dbo.DataCleaningBatched 'qatest8@domain.com','DEVOPS','me@domain.com',1,0,1
 -- =============================================
 CREATE OR ALTER       PROCEDURE [dbo].[DataCleaningBatched]
-@email varchar(100) = 'qatest@CoventBridge.com',			-- set this to the email you want to replace all email addresses in the database with.
+@email varchar(100) = 'qatest@domain.com',			-- set this to the email you want to replace all email addresses in the database with.
 @AgentProfile varchar(100) = 'DEVOPS',						-- SQL Agent profile account to be used to send failure alert email from.
-@RecipientEmail varchar(200) = 'DEVOPS@CoventBridge.com',	-- Email address to send the failure alert to.
+@RecipientEmail varchar(200) = 'DEVOPS@domain.com',	-- Email address to send the failure alert to.
 @DebuggerON bit = 0,
 @LocalHostIsQa int = 0,										-- WARNING:  This will RUN, even on PROD if set to 1.
 @CleanTemporalTables bit = 1								-- This DISABLES the HISTORY table, DELETES all history records allows the main table to be cleaned without records logged.
@@ -3333,7 +3333,7 @@ BEGIN
 					@recipients = @RecipientEmail,
 					@body = @Body,
 					@subject = @Body ,
-					@body_format = 'HTML'; 
+					@body_format = 'HTML';Â 
 			END TRY
 			BEGIN CATCH
 				INSERT INTO dbo.DimAudit ( [ParentAuditKey], [TableName], [PkgName], [PkgGUID], [ExecStartDT], [ExecStopDT], [UpdateRowCnt], [SuccessfulProcessingInd], [SqlStatement])
